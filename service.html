@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Bestabe</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+
+    <div class="header w-full h flex flex-col items-center">
+
+        <!-- Division 1 Start -->
+
+        <div class="w-full hidden division1 h-fit md:flex border-b-2 justify-between max-w-[1400px] py-3">
+            <div class="flex text-base gap-4">
+                <p class="flex items-center"><img class="object-contain h-4"
+                        src="./src/images/icons/Location Icon.svg">Main Street, Anytown India</p>
+                <p class="text-gray-400"> | </p>
+                <p class="flex items-center"><img class="object-contain h-4"
+                        src="./src/images/icons/Phone Icon.svg" />+91 123-4567-890</p>
+            </div>
+            <div class="flex gap-4">
+                <a><img class="h-4" src="./src/images/icons/Social/facebook-app-symbol.png" /></a>
+                <a><img class="h-4" src="./src/images/icons/Social/twitter.png" /></a>
+                <a><img class="h-4" src="./src/images/icons/Social/instagram.png" /></a>
+            </div>
+        </div>
+
+        <!-- Division 1 End -->
+
+        <!-- Division 2 Start -->
+
+        <div class="division2 flex p-8 flex-wrap w-full max-w-[1400px] py-4 row justify-between">
+            <img class="h-12" src="./src/images/logo/Bestabe-Logo.svg" alt="">
+
+            <div class="mobile-cart-user md:hidden flex gap-4">
+                <div class="cart border-2 px-4 py-4 rounded-full">
+                    <img class="hover:bg-[#65733e] transition-all duration-300 h-4"
+                        src="./src/images/icons/Cart Icon.svg" alt="">
+                </div>
+                <div class="cart border-2 px-4 py-4 rounded-full">
+                    <img class="hover:bg-[#65733e] transition-all duration-300 h-4"
+                        src="./src/images/icons/User Icon.svg" alt="">
+                </div>
+            </div>
+
+            <div class="filter flex md:gap-4 gap-1 md:w-auto md:my-0 mt-2 w-full">
+                <select class="w-full p-3 rounded-md border-2">
+                    <option>Trichy</option>
+                    <option>Thanjavur</option>
+                    <option>Nagapattinam</option>
+                </select>
+                <form class="w-full p-3 justify-between rounded-md border-2">
+                    <div class=" flex">
+                        <input class="w-full border-0" type="text" placeholder="Search..">
+                        <button type="submit"><img src="./src/images/icons/Search Icon.svg" /></button>
+                    </div>
+                </form>
+            </div>
+            <div class="cart-user hidden md:flex flex-col w-full md:w-auto">
+                <div class="cart flex gap-8">
+                    <img src="./src/images/icons/Cart Icon.svg" alt="">
+                    <div class="cart-text">
+                        <p>Cart</p>
+                        <p class="font-bold">₹ 150,00</p>
+                    </div>
+                    <div class="user flex gap-4">
+                        <img src="./src/images/icons/User Icon.svg" alt="">
+                        <div class="cart-text">
+                            <p>User</p>
+                            <p class="font-bold">Account</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Division 2 End -->
+
+        <!-- Division 3 Start -->
+
+        <div class="division3 w-full px-8 py-4 bg-[#65733e]">
+            <div class="wrapper mx-auto flex justify-between max-w-[1400px]">
+                <div class="categories-products text-white flex  gap-8">
+                    <a href="">
+                        <div class="flex flex-row items-center gap-2">
+                            <img class="h-4" src="./src/images/icons/category.svg" />
+                            <p>All Categories</p>
+                        </div>
+                    </a>
+                    <select name="Products" class="bg-transparent hidden md:flex" id="">
+                        <option value="Products">Products</option>
+                    </select>
+                </div>
+                <p class="text-white hidden md:flex">Trending Services 👋🏻</p>
+                <button class="md:hidden" onclick="openForm()">
+                    <img src="./src/images/icons/burger-menu.svg" alt="">
+                </button>
+
+                <div id="popup"
+                    class="absolute myForm lg:hidden md:hidden gap-4 right-8 top-48  flex flex-col bg-white w-fit h-fit rounded-lg shadow-md items-start">
+                    <button onclick="closeForm()">
+                        <img class="h-3 absolute right-4 top-4" src="./src/images/icons/close.svg" alt="">
+                    </button>
+                    <div class="links flex p-4 gap-4 flex-col mb-16">
+                        <select name="Products" class="bg-transparent" id="">
+                            <option value="Products">Products</option>
+                        </select>
+                        <p class="text-balance">Trending Services 👋🏻</p>
+                    </div>
+                    <div class="contact-wrapper flex flex-col gap-4 bg-gray-200 rounded-b-lg p-4">
+                        <div class="flex flex-col border-t-2 pt-4  text-base gap-2">
+                            <p class="flex items-center"><img class="object-contain h-4"
+                                    src="./src/images/icons/Location Icon.svg">Main Street, Anytown India</p>
+
+                            <p class="flex items-center"><img class="object-contain h-4"
+                                    src="./src/images/icons/Phone Icon.svg" />+91 123-4567-890</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <a><img class="h-4" src="./src/images/icons/Social/facebook-app-symbol.png" /></a>
+                            <a><img class="h-4" src="./src/images/icons/Social/twitter.png" /></a>
+                            <a><img class="h-4" src="./src/images/icons/Social/instagram.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Division 3 End -->
+
+    </div>
+
+    <!-- Header End -->
+
+    <div class="overall-wrapper max-w-[1400px] py-16 mx-auto px-8 md:px-8 ">
+
+        <!-- Breadcrumb Start -->
+
+        <div class="breadcrumb mb-8 md:text-base text-xs">
+            <p><span class="hover:text-[65733e]"> <a href="./index.html">Home</a></span> |
+                <span class="hover:text-[65733e]"> <a href=""> Technology & Repair Service</a></span> |
+                <span class="hover:text-[65733e]"> <a href=""> AC Repair</a></span>
+            </p>
+        </div>
+
+        <!-- breadcrumb End -->
+
+        <!-- Product Face Start -->
+
+        <div class="wrapper flex w-full justify-center flex-wrap">
+            <div class="product-img flex justify-center flex-col lg:w-1/2 md:w-full w-full h-fit">
+                <img class="rounded-3xl" src="./src/images/service-page/pd image.svg" alt="">
+                <div class="usp flex justify-between lg:gap-0 md:gap-0 gap-2 py-8">
+                    <div class="usp1 flex md:flex-row flex-col md:text-left text-center md:gap-4">
+                        <img class="w-6" src="./src/images/service-page/usp-icons/Delivery Icon.svg" alt="">
+                        <div class="text-content lg:text-lg md:text-base text-xs">
+                            <h4 class="font-bold">Fast Service</h4>
+                            <p>Worldwide available</p>
+                        </div>
+                    </div>
+                    <div class="usp2 flex md:flex-row flex-col md:text-left text-center md:gap-4">
+                        <img class="w-6" src="./src/images/service-page/usp-icons/Security Icon.svg" alt="">
+                        <div class="text-content lg:text-lg md:text-base text-xs">
+                            <h4 class="font-bold">100% Guaranteed</h4>
+                            <p>Receive Good Service</p>
+                        </div>
+                    </div>
+                    <div class="usp3 flex md:flex-row flex-col md:text-left text-center md:gap-4">
+                        <img class="w-6" src="./src/images/service-page/usp-icons/Return Icon.svg" alt="">
+                        <div class="text-content lg:text-lg md:text-base text-xs">
+                            <h4 class="font-bold">Refund Available</h4>
+                            <p>See return policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-data lg:w-1/2 md:w-full w-full ml-auto lg:pl-8">
+
+                <div class="dicision1 flex flex-col">
+                    <div class="header-title border-b-2">
+                        <div class="rating flex gap-6">
+                            <div class="stars flex">
+                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
+                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
+                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
+                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
+                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
+                            </div>
+                            <p>(142)</p>
+                        </div>
+                        <h2 class="text-3xl font-serif pb-8 pt-6">Air Conditioner (A/C) Repair</h2>
+                    </div>
+
+                    <div class="price py-4 flex gap-8 flex-wrap items-end">
+                        <h2 class="text-4xl font-semibold text-[#65733e]">$299.99</h2>
+                        <p class="text-gray-400 line-through">$5,499.99</p>
+                    </div>
+
+                    <div class="other-images flex overflow-x-scroll gap-8">
+                        <img class="w-24" src="./src/images/service-page/pd1.svg" alt="">
+                        <img class="w-24" src="./src/images/service-page/pd2.svg" alt="">
+                        <img class="w-24" src="./src/images/service-page/pd3.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="cta-btn flex gap-4 py-8">
+                    <button
+                        class="hover:bg-[#354b9c] md:w-2/5 w-full border-2 border-[#354b9c] bg-transparent transition-all duration-300 text-[#354b9c] font-semibold py-4 px-4 rounded">
+                        Add to cart
+                    </button>
+                    <button
+                        class="bg-[#354b9c] w-full hover:bg-[#202e60] transition-all duration-300 text-white font-semibold py-4 px-4 rounded">
+                        Book Now
+                    </button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- Product Face End -->
+
+        <!-- Details and Description Start -->
+
+        <div class="details-and-review">
+            <ul class=" flex gap-4">
+                <li class="font-semibold text-xl w-fit border-b-2 border-[#65733e]"> <a href="">Description</a> </li>
+                <li class="font-medium text-gray-400 text-xl"> <a href="">Review</a> </li>
+            </ul>
+
+            <p class="text-gray-500 py-8">When your air conditioner starts to show signs of trouble, it can quickly disrupt your home’s comfort and your peace of mind. Whether it's an unexpected breakdown, reduced cooling efficiency, strange noises, or leaks, our dedicated AC Repair Service is designed to address all your air conditioning issues promptly and efficiently.</p>
+            
+            <h3 class="text-lg font-semibold">Detailed AC Repair Process</h3>
+
+            <div class="grids grid grid-cols-2 grid-rows-2 gap-8">
+
+                <p class="text-gray-500 py-8 text-wrap">1. Scheduling an Appointment: Book a convenient time for our technician to visit your home. We offer flexible scheduling to fit your busy lifestyle</p>
+
+                <p class="text-gray-500 py-8 text-wrap">2. In-Home Evaluation: Our technician arrives on time, equipped with advanced tools and diagnostic equipment to assess the condition of your AC unit. They will explain the issues and outline a clear, comprehensive repair plan.</p>
+
+                <p class="text-gray-500 py-8 text-wrap">3. Repair and Testing: Upon your approval, our technician will carry out the necessary repairs using high-quality parts. After the repairs, they will thoroughly test your AC unit to ensure it operates efficiently and effectively.</p>
+
+                <p class="text-gray-500 py-8 text-wrap">4. Customer Satisfaction: We prioritize your satisfaction. Our technician will review the completed work with you, answer any questions, and provide maintenance tips to help you keep your AC in optimal condition.</p>
+            </div>
+
+        </div>
+
+        <!-- Details and Description End -->
+
+        <!-- Service Banner Start -->
+
+        <div class="relative col-span-4 rounded-3xl bg-cover bg-center h-96"
+            style="background-image: url('./src/images/service-page/Image\ Placeholder.svg');">
+            <div class="absolute rounded-3xl inset-0 bg-gradient-to-l from-transparent to-black"></div>
+            <div class="relative flex justify-start items-center h-full pl-16">
+                <div class=" text-left  text-white">
+                    <h1 class="text-4xl font-bold mb-4">Your Service Title</h1>
+                    <p class="mb-6 md:w-3/6 w-3/4 text-wrap">Brief description of your service that highlights its value and
+                        purpose.</p>
+                    <button
+                        class="bg-[#354b9c] hover:bg-[#202e60] transition-all duration-300 text-white font-semibold py-2 px-4 rounded">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Script Start  -->
+
+    <script>
+        function openForm() {
+          document.getElementById("popup").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("popup").style.display = "none";
+        }
+        </script>
+
+    <!-- Script End  -->
+
+    <!-- Footer Start -->
+
+    <footer class="w-full h-fit flex bg-[#070D13]">
+        <div class="footer-wrapper w-full max-w-[1400px] py-20 px-8 mx-auto">
+            <!-- Newsletter Section -->
+            <div
+                class="footer-division-1 flex flex-wrap sm:flex-nowrap items-center w-full pb-10 border-b-[1px] border-opacity-20 border-white gap-6 sm:gap-10">
+                <!-- Text Section -->
+                <div class="text flex flex-col gap-4 w-full sm:w-1/2">
+                    <p class="capitalize font-serif text-[#65733e]">newsletter</p>
+                    <h2 class="text-3xl sm:text-4xl font-serif text-white font-light">
+                        Get Monthly Updates
+                    </h2>
+                </div>
+
+                <!-- Newsletter Form -->
+                <form
+                    class="w-full sm:w-1/2 flex items-center gap-2 p-3 h-fit bg-[#1A1F25] rounded-lg border border-opacity-20 border-white focus-within:border-opacity-100 transition-all duration-300 ease-in-out">
+                    <input
+                        class="flex-grow bg-transparent border-0 text-sm text-white placeholder-gray-400 outline-none focus:ring-0"
+                        type="email" placeholder="Enter your email address" required>
+                    <button type="submit"
+                        class="bg-[#65733e] text-white p-2 rounded-lg hover:bg-[#54622d] transition duration-300"
+                        aria-label="Subscribe to Newsletter">
+                        <img src="./src/images/icons/Arrow Icon.svg" alt="Submit">
+                    </button>
+                </form>
+            </div>
+
+
+
+            <!-- Footer Links -->
+            <div class="footer-division-2 grid mt-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
+                <!-- Logo and Description -->
+                <div class="col1 flex flex-col gap-4">
+                    <div class="logowrapper bg-white h-fit w-fit p-4 rounded-lg">
+                        <img class="h-24 w-24 sm:h-32 sm:w-32 object-contain" src="./src/images/logo/Logo _png.png"
+                            alt="Logo">
+                    </div>
+                    <p class="text-white text-sm sm:text-base">
+                        Our ultimate goal is to provide the best possible support service that are on time, at low cost
+                        with
+                        experienced and certified personnel attending to client needs at the service location.
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col2">
+                    <div class="categories">
+                        <h2 class="text-[#65733e] text-xl sm:text-2xl font-semibold">Useful Links</h2>
+                        <ul>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">Cart</a>
+                            </li>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">Wishlist</a>
+                            </li>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">My Account</a>
+                            </li>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">Product List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Our Organization -->
+                <div class="col2">
+                    <div class="categories">
+                        <h2 class="text-[#65733e] text-xl sm:text-2xl font-semibold">Our Organization</h2>
+                        <ul>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">Unit Head</a>
+                            </li>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">Contractor Representative</a>
+                            </li>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">Service Engineer/ Technician</a>
+                            </li>
+                            <li
+                                class="hover:pl-4 text-gray-400 hover:border-l-2 hover:border-[#65733e] hover:text-[#65733e] transition-all duration-500 my-4 ease-in-out">
+                                <a href="#">Managing & Zonal Head Directors</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contacts -->
+                <div class="col3">
+                    <div class="categories">
+                        <h2 class="text-[#65733e] text-xl sm:text-2xl font-semibold">Contacts</h2>
+                        <ul>
+                            <li
+                                class="text-gray-400 font-normal hover:text-white transition-all duration-500 my-4 ease-in-out">
+                                <a class="flex items-start gap-2" href="#">
+                                    <img src="./src/images/icons/footer/Pin Icon.svg" alt="Location">
+                                    <p>123 Main Street Chicago, ILO State, 60601 United States of America</p>
+                                </a>
+                            </li>
+                            <li
+                                class="text-gray-400 font-normal hover:text-white transition-all duration-500 my-4 ease-in-out">
+                                <a class="flex items-start gap-2" href="#">
+                                    <img src="./src/images/icons/footer/Phone Icon Red.svg" alt="Phone">
+                                    <p>+1 (234) 567 890</p>
+                                </a>
+                            </li>
+                            <li
+                                class="text-gray-400 font-normal hover:text-white transition-all duration-500 my-4 ease-in-out">
+                                <a class="flex items-center gap-2" href="#">
+                                    <img src="./src/images/icons/footer/Email Icon.svg" alt="Email">
+                                    <p>support@bestabe.com</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="division3">
+                <p class="text-gray-500 pt-16">
+                    <span class="hover:text-[#65733e]"> <a href="">Privacy Policy</a> </span> |
+                    <span class="hover:text-[#65733e]"> <a href="">Terms & Condition</a></span> |
+                    <span class="hover:text-[#65733e]"> <a href="">Sitemap</a></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+</body>
+
+</html>
