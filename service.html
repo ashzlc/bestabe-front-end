@@ -13,22 +13,22 @@
 
     <!-- Header Start -->
 
-    <div class="header w-full h flex flex-col items-center">
+    <div class="header w-full h flex flex-col items-center justify-center">
 
         <!-- Division 1 Start -->
 
         <div class="w-full hidden division1 h-fit md:flex border-b-2 justify-between max-w-[1400px] py-3">
             <div class="flex text-base gap-4">
                 <p class="flex items-center"><img class="object-contain h-4"
-                        src="./src/images/icons/Location Icon.svg">Main Street, Anytown India</p>
+                        src="./src/images/icons/Header/Location Icon.svg">Main Street, Anytown India</p>
                 <p class="text-gray-400"> | </p>
                 <p class="flex items-center"><img class="object-contain h-4"
-                        src="./src/images/icons/Phone Icon.svg" />+91 123-4567-890</p>
+                        src="./src/images/icons/Header/Phone Icon.svg" />+91 123-4567-890</p>
             </div>
             <div class="flex gap-4">
-                <a><img class="h-4" src="./src/images/icons/Social/facebook-app-symbol.png" /></a>
-                <a><img class="h-4" src="./src/images/icons/Social/twitter.png" /></a>
-                <a><img class="h-4" src="./src/images/icons/Social/instagram.png" /></a>
+                <a><img class="h-4" src="./src/images/icons/Header/facebook-app-symbol.png" /></a>
+                <a><img class="h-4" src="./src/images/icons/Header/twitter.png" /></a>
+                <a><img class="h-4" src="./src/images/icons/Header/instagram.png" /></a>
             </div>
         </div>
 
@@ -42,11 +42,11 @@
             <div class="mobile-cart-user md:hidden flex gap-4">
                 <div class="cart border-2 px-4 py-4 rounded-full">
                     <img class="hover:bg-[#65733e] transition-all duration-300 h-4"
-                        src="./src/images/icons/Cart Icon.svg" alt="">
+                        src="./src/images/icons/Header/Cart Icon.svg" alt="">
                 </div>
                 <div class="cart border-2 px-4 py-4 rounded-full">
                     <img class="hover:bg-[#65733e] transition-all duration-300 h-4"
-                        src="./src/images/icons/User Icon.svg" alt="">
+                        src="./src/images/icons/Header/Cart Icon.svg" alt="">
                 </div>
             </div>
 
@@ -59,19 +59,19 @@
                 <form class="w-full p-3 justify-between rounded-md border-2">
                     <div class=" flex">
                         <input class="w-full border-0" type="text" placeholder="Search..">
-                        <button type="submit"><img src="./src/images/icons/Search Icon.svg" /></button>
+                        <button type="submit"><img src="./src/images/icons/Header/Search Icon.svg" /></button>
                     </div>
                 </form>
             </div>
             <div class="cart-user hidden md:flex flex-col w-full md:w-auto">
                 <div class="cart flex gap-8">
-                    <img src="./src/images/icons/Cart Icon.svg" alt="">
+                    <img src="./src/images/icons/Header/Cart Icon.svg" alt="">
                     <div class="cart-text">
                         <p>Cart</p>
                         <p class="font-bold">₹ 150,00</p>
                     </div>
                     <div class="user flex gap-4">
-                        <img src="./src/images/icons/User Icon.svg" alt="">
+                        <img src="./src/images/icons/Header/User Icon.svg" alt="">
                         <div class="cart-text">
                             <p>User</p>
                             <p class="font-bold">Account</p>
@@ -90,7 +90,7 @@
                 <div class="categories-products text-white flex  gap-8">
                     <a href="">
                         <div class="flex flex-row items-center gap-2">
-                            <img class="h-4" src="./src/images/icons/category.svg" />
+                            <img class="h-4" src="./src/images/icons/Header/category.svg" />
                             <p>All Categories</p>
                         </div>
                     </a>
@@ -100,13 +100,13 @@
                 </div>
                 <p class="text-white hidden md:flex">Trending Services 👋🏻</p>
                 <button class="md:hidden" onclick="openForm()">
-                    <img src="./src/images/icons/burger-menu.svg" alt="">
+                    <img class="h-6" src="./src/images/icons/Header/menu.svg" alt="">
                 </button>
 
                 <div id="popup"
                     class="absolute myForm lg:hidden md:hidden gap-4 right-8 top-48  flex flex-col bg-white w-fit h-fit rounded-lg shadow-md items-start">
                     <button onclick="closeForm()">
-                        <img class="h-3 absolute right-4 top-4" src="./src/images/icons/close.svg" alt="">
+                        <img class="h-3 absolute right-4 top-4" src="./src/images/icons/Header/close.svg" alt="">
                     </button>
                     <div class="links flex p-4 gap-4 flex-col mb-16">
                         <select name="Products" class="bg-transparent" id="">
@@ -116,16 +116,16 @@
                     </div>
                     <div class="contact-wrapper flex flex-col gap-4 bg-gray-200 rounded-b-lg p-4">
                         <div class="flex flex-col border-t-2 pt-4  text-base gap-2">
-                            <p class="flex items-center"><img class="object-contain h-4"
-                                    src="./src/images/icons/Location Icon.svg">Main Street, Anytown India</p>
+                            <a href=""><p class="flex gap-2 items-center"><img class="object-contain h-4"
+                                    src="./src/images/icons/Header/Location Icon.svg">Main Street, Anytown India</p></a>
 
-                            <p class="flex items-center"><img class="object-contain h-4"
-                                    src="./src/images/icons/Phone Icon.svg" />+91 123-4567-890</p>
+                            <a href=""><p class="flex gap-2 items-center"><img class="object-contain h-4"
+                                    src="./src/images/icons/Header/Phone Icon.svg" />+91 123-4567-890</p></a>
                         </div>
                         <div class="flex gap-4">
-                            <a><img class="h-4" src="./src/images/icons/Social/facebook-app-symbol.png" /></a>
-                            <a><img class="h-4" src="./src/images/icons/Social/twitter.png" /></a>
-                            <a><img class="h-4" src="./src/images/icons/Social/instagram.png" /></a>
+                            <a><img class="h-4" src="./src/images/icons/Header/twitter.png" /></a>
+                            <a><img class="h-4" src="./src/images/icons/Header/facebook-app-symbol.png" /></a>
+                            <a><img class="h-4" src="./src/images/icons/Header/instagram.png" /></a>
                         </div>
                     </div>
                 </div>
@@ -159,21 +159,21 @@
                 <img class="rounded-3xl" src="./src/images/service-page/pd image.svg" alt="">
                 <div class="usp flex justify-between lg:gap-0 md:gap-0 gap-2 py-8">
                     <div class="usp1 flex md:flex-row flex-col md:text-left text-center md:gap-4">
-                        <img class="w-6" src="./src/images/service-page/usp-icons/Delivery Icon.svg" alt="">
+                        <img class="w-6" src="./src/images/icons/service-page/Delivery Icon.svg" alt="">
                         <div class="text-content lg:text-lg md:text-base text-xs">
                             <h4 class="font-bold">Fast Service</h4>
                             <p>Worldwide available</p>
                         </div>
                     </div>
                     <div class="usp2 flex md:flex-row flex-col md:text-left text-center md:gap-4">
-                        <img class="w-6" src="./src/images/service-page/usp-icons/Security Icon.svg" alt="">
+                        <img class="w-6" src="./src/images/icons/service-page/Security Icon.svg" alt="">
                         <div class="text-content lg:text-lg md:text-base text-xs">
                             <h4 class="font-bold">100% Guaranteed</h4>
                             <p>Receive Good Service</p>
                         </div>
                     </div>
                     <div class="usp3 flex md:flex-row flex-col md:text-left text-center md:gap-4">
-                        <img class="w-6" src="./src/images/service-page/usp-icons/Return Icon.svg" alt="">
+                        <img class="w-6" src="./src/images/icons/service-page/Return Icon.svg" alt="">
                         <div class="text-content lg:text-lg md:text-base text-xs">
                             <h4 class="font-bold">Refund Available</h4>
                             <p>See return policy</p>
@@ -187,11 +187,11 @@
                     <div class="header-title border-b-2">
                         <div class="rating flex gap-6">
                             <div class="stars flex">
-                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
-                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
-                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
-                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
-                                <img src="./src/images/service-page/usp-icons/Star.svg" alt="">
+                                <img src="./src/images/icons/service-page/Star.svg" alt="">
+                                <img src="./src/images/icons/service-page/Star.svg" alt="">
+                                <img src="./src/images/icons/service-page/Star.svg" alt="">
+                                <img src="./src/images/icons/service-page/Star.svg" alt="">
+                                <img src="./src/images/icons/service-page/Star.svg" alt="">
                             </div>
                             <p>(142)</p>
                         </div>
@@ -259,7 +259,7 @@
         <!-- Service Banner Start -->
 
         <div class="relative col-span-4 rounded-3xl bg-cover bg-center h-96"
-            style="background-image: url('./src/images/service-page/Image\ Placeholder.svg');">
+            style="background-image: url('./src/images/service-page/AC\ Repair.png');">
             <div class="absolute rounded-3xl inset-0 bg-gradient-to-l from-transparent to-black"></div>
             <div class="relative flex justify-start items-center h-full pl-16">
                 <div class=" text-left  text-white">
@@ -315,7 +315,7 @@
                     <button type="submit"
                         class="bg-[#65733e] text-white p-2 rounded-lg hover:bg-[#54622d] transition duration-300"
                         aria-label="Subscribe to Newsletter">
-                        <img src="./src/images/icons/Arrow Icon.svg" alt="Submit">
+                        <img class="h-4" src="./src/images/icons/footer/Arrow Icon.svg" alt="Submit">
                     </button>
                 </form>
             </div>
